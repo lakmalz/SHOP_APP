@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:shop_app/constants.dart';
-import 'package:shop_app/screens/home/body.dart';
+
+import 'components/body.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({Key key}) : super(key: key);
@@ -21,25 +22,27 @@ class HomeScreen extends StatelessWidget {
       backgroundColor: Colors.white,
       elevation: 0,
       leading: IconButton(
-        icon: SvgPicture.asset("assets\icons\back.svg"),
-        onPressed: () => {},
+        icon: SvgPicture.asset("assets/icons/back.svg"),
+        onPressed: () {},
       ),
-      actions: [
+      actions: <Widget>[
         IconButton(
-            icon: SvgPicture.asset(
-              "assets\icons\search.svg",
-              color: kTextColor,
-            ),
-            onPressed: null),
+          icon: SvgPicture.asset(
+            "assets\icons\cart.svg",
+            // By default our  icon color is white
+            color: kTextColor,
+          ),
+          onPressed: () {},
+        ),
         IconButton(
-            icon: SvgPicture.asset(
-              "assets\icons\cart.svg",
-              color: kTextColor,
-            ),
-            onPressed: null),
-        SizedBox(
-          width: kDefaultPadding / 2,
-        )
+          icon: SvgPicture.asset(
+            "assets/icons/cart.svg",
+            // By default our  icon color is white
+            color: kTextColor,
+          ),
+          onPressed: () {},
+        ),
+        SizedBox(width: kDefaultPadding / 2)
       ],
     );
   }
