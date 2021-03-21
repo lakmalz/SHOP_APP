@@ -1,2 +1,2 @@
 # SHOP_APP
-FLutter UI for Ecommerce application
+Flutter UI for Ecommerce application
